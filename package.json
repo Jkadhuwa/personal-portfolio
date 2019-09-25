@@ -1,0 +1,22 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w styles/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jkadhuwa/personal-portfolio.git"
+  },
+  "author": "Jkadhuwa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jkadhuwa/personal-portfolio/issues"
+  },
+  "homepage": "https://github.com/Jkadhuwa/personal-portfolio#readme",
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

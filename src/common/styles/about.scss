@@ -1,0 +1,33 @@
+
+.avatar-box {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+.avatar {
+  margin-top: 2em;
+  width: 100%;
+  border-radius: 50%;
+}
+.skills-title {
+  text-align: center;
+  margin-top: 3em;
+  height: fit-content;
+  text-transform: uppercase;
+}
+.skills-container {
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+}
+.skills {
+  margin-right: 1.5rem;
+  height: 4rem;
+  img {
+    height: 50px;
+  }
+}
+.btn-portfolio {
+  text-align: center;
+  text-transform: uppercase;
+}

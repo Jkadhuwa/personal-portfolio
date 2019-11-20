@@ -1,0 +1,28 @@
+$Primary_color: #555;
+$Secondary_color: #555;
+$Text_color: rgb(44, 44, 44);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.banner {
+  background-image: url(../imgs/intro-bg.jpg);
+  height: 100vh;
+  text-transform: uppercase;
+}
+.intro-text {
+  padding-top: 35vh;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2em;
+  color: $Text_color;
+  .social-link {
+    color: $Primary_color;
+    margin-right: 2rem;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node prod-server.js",
-    "dev": "webpack-dev-server --mode=development",
+    "dev": "webpack-dev-server --hot --mode development",
     "build": "webpack --mode production",
     "test:CI": "CI=true jest \"-- --coverage\"",
     "test": "jest \"-- --coverage\" --watchAll",
@@ -24,10 +24,23 @@
   },
   "homepage": "https://github.com/Jkadhuwa/personal-portfolio#readme",
   "dependencies": {
+    "@babel/node": "^7.7.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.7",
+    "autoprefixer": "^9.7.1",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^3.2.0",
+    "jquery": "^3.4.1",
     "node-sass": "^4.12.0",
+    "popper.js": "^1.16.0",
+    "postcss-loader": "^3.0.0",
+    "precss": "^4.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2"
+    "react-router-dom": "^5.1.2",
+    "style-loader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
@@ -41,10 +54,16 @@
     "eslint-config-prettier": "^6.5.0",
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
+    "file-loader": "^4.2.0",
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.2.0",
+    "identity-obj-proxy": "^3.0.0",
     "jest": "^24.9.0",
+    "open-browser-webpack-plugin": "0.0.5",
+    "path": "^0.12.7",
     "prettier": "^1.19.1",
+    "sass-loader": "^8.0.0",
+    "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
@@ -55,6 +74,14 @@
   "jest": {
     "setupFiles": [
       "<rootDir>/src/setupTests.js"
-    ]
+    ],
+    "moduleFileExtensions": [
+      "js",
+      "jsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/__mocks__/fileMock.js",
+      "\\.(scss|less)$": "<rootDir>/src/__mocks__/styleMock.js"
+    }
   }
 }

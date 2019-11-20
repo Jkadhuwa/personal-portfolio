@@ -1,0 +1,28 @@
+.page-title {
+  margin-top: 6em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal !important;
+  color: #555 !important;
+}
+
+.portfolio-links {
+  margin-right: 2rem;
+  height: 2rem;
+  padding-top: 2px;
+}
+.page-scroll {
+  border: 1px solid black !important;
+  border-radius: 0 !important;
+  margin-top: 2em;
+  &:hover {
+    background: #000d1a;
+    color: white !important;
+  }
+}
+
+hr {
+  width: 5em;
+  margin: 0 auto;
+}
+
